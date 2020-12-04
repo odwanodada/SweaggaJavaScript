@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="styling.css">
+
+</head>
+
+<body>
+    <div id="page">
+        <div id="main">
+            <img src="swegga.jpg" alt="links" id="sidebar" />
+            <img src="delivery.gif" alt="del" id="banner" />
+            <img src="links.gif" alt="links" id="navigation" usemap="#mylinks" />
+            <map name="mylinks">
+
+                <area target="" alt="" title="" href="home.html" coords="6,7,96,36" shape="rect">
+                <area target="" alt="" title="" href="services.html" coords="104,7,194,36" shape="rect">
+                <area target="" alt="" title="" href="products.html" coords="204,3,301,37" shape="rect">
+                <area target="" alt="" title="" href="order status.html" coords="306,1,442,36" shape="rect">
+                <area target="" alt="" title="" href="ContactUs" coords="448,4,555,37" shape="rect">
+
+            </map>
+
+            <h1 class="caption">Product Summary</h1>
+            <table>
+                <tr>
+                    <th>Description</th>
+                    <th>Size</th>
+                    <th>colour</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>total</th>
+                </tr>
+                <tr>
+                    <td>female ski jackets</td>
+                    <td>
+                        <select>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="red">red</option>
+                            <option value="black">black</option>
+                            <option value="blue">blue</option>
+                        </select>
+                    </td>
+                    <td>150.95</td>
+                    <td>
+                        <select id="f">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td id="female">n/a</td>
+                </tr>
+                <tr>
+                    <td>male ski jackets</td>
+                    <td>
+                        <select>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="red">red</option>
+                            <option value="black">black</option>
+                            <option value="blue">blue</option>
+                        </select>
+                    </td>
+                    <td>189.95</td>
+                    <td>
+                        <select id="m">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td id="male">n/a</td>
+                </tr>
+                <tr>
+                    <td colspan="4">Click to confirm and process your order:</td>
+                    <td><input type="button" value="Count" onclick=calculateT()></td>
+                    <td id="total">n/a</td>
+                </tr>
+            </table>
+            <br />
+            <br />
+            <br />
+            <hr style="width: 80%; text-align: left; margin-left: 0" />
+            <footer class="copyright">
+                <p>© 2020 Swegga Fashion - Examination number</p>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <script src="order.js"></script>
+</body>
+
+</html>
